@@ -1,1 +1,10 @@
+# File and Directory Management
 
+ - os.startfile(path)  #: Opens a file, folder, or application with the default program on Windows.
+ - os.getcwd()  #: Get the current working directory.
+ - os.chdir(path)  #: Change the current working directory.
+ - os.listdir(path)  #: List all files and directories in a given path.
+ - os.rename(src, dst)  #: Rename a file or directory.
+ - os.remove(path)  #: Delete a file.
+ - os.rmdir(path)  #: Remove an empty directory.
+ - os.makedirs(path)  #: Create nested directories. 
