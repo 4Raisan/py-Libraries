@@ -8,3 +8,14 @@
  - os.remove(path)  #: Delete a file.
  - os.rmdir(path)  #: Remove an empty directory.
  - os.makedirs(path)  #: Create nested directories. 
+
+# The os.path module provides utilities to manipulate abd query file paths. 
+
+- os.path.exists(path): Check if a path exists.
+- os.path.isfile(path): Check if a path is a file.
+- os.path.isdir(path): Check if a path is a directory.
+- os.path.abspath(path): Get the absolute path of a file or directory.
+- os.path.dirname(path): Get the directory name of a file path.
+- os.path.basename(path): Get the base name of a file.
+- os.path.split(path): Split a path into directory and file parts.
+- os.path.join(path, *paths): Combine paths intelligently. 
