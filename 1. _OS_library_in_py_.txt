@@ -9,6 +9,7 @@
  - os.rmdir(path)  #: Remove an empty directory.
  - os.makedirs(path)  #: Create nested directories. 
 
+
 # The os.path module provides utilities to manipulate abd query file paths. 
 
 - os.path.exists(path): Check if a path exists.
@@ -19,3 +20,11 @@
 - os.path.basename(path): Get the base name of a file.
 - os.path.split(path): Split a path into directory and file parts.
 - os.path.join(path, *paths): Combine paths intelligently. 
+
+
+#File Descriptors
+
+- os.open(path, flags): Open a file and return its file descriptor.
+- os.read(fd, n): Read n bytes from the file descriptor.
+- os.write(fd, str): Write a string to the file descriptor.
+- os.close(fd): Close a file descriptor. 
