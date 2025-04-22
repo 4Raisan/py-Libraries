@@ -28,3 +28,13 @@
 - os.read(fd, n): Read n bytes from the file descriptor.
 - os.write(fd, str): Write a string to the file descriptor.
 - os.close(fd): Close a file descriptor. 
+
+
+# Using 
+
+Can be using to recognize the files on the same directory located py file...
+# Script Location  # how to fined the files location
+'''
+- os.path.dirname(os.path.abspath(__file__)): Get the directory where the Python script is located.
+- __file__: Represents the relative path of the currently executing script. Use it with os.path functions to get the script's location.
+'''
