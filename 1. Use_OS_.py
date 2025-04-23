@@ -16,3 +16,10 @@ print(slocation)
    # make a list of the other files/folders on the same directory
 iteamlist = listdir(slocation)
 print(iteamlist)
+
+
+ # Just for knowing
+# give the main terminal path - just for knowing
+jknow = path.dirname(path.abspath(fname))
+print()
+print(jknow)
