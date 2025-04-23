@@ -4,3 +4,6 @@
 - os.path.dirname(os.path.abspath(__file__)) : Get the directory where the Python script is located.
 - __file__ : Represents the relative path of the currently executing script. Use it with os.path functions to get the script's location.
 - os.listdir(os.path.dirname(os.path.abspath(__file__))) : to make the list of the other iteams on the same directory. '''
+
+
+from os import *    # or import os
