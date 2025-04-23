@@ -7,3 +7,9 @@
 
 
 from os import *    # or import os
+
+   # find script location
+fname = "1. _OS_library_in_py_.py"  # or use __file__ for use the script lopcation whare we ran
+slocation = path.dirname(path.abspath(__file__))  # find script location
+
+print(slocation)
