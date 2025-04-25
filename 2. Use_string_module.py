@@ -13,6 +13,8 @@ string module contains; all printable ASCII characters...
 .ascii_lowercase : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'  
 ---------------------------------------------------------
 .punctuation : '!"#$%&\'()*+,-./:;<=>?@[\\]^_{|}~'`  
+---------------------------------------------------------
+.whitespace : ' \t\n\r\x0b\x0c'
 '''
 
 # from string import *
