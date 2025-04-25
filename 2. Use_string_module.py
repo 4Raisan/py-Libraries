@@ -11,6 +11,8 @@ string module contains; all printable ASCII characters...
 .ascii_letters   
 .ascii_lowercase : 'abcdefghijklmnopqrstuvwxyz' 
 .ascii_lowercase : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'  
+---------------------------------------------------------
+.punctuation : '!"#$%&\'()*+,-./:;<=>?@[\\]^_{|}~'`  
 '''
 
 # from string import *
