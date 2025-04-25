@@ -7,6 +7,10 @@ string module contains; all printable ASCII characters...
 .printable : all printabels
 ---------------------------------------------------------
 .digits : '0123456789'  
+---------------------------------------------------------
+.ascii_letters   
+.ascii_lowercase : 'abcdefghijklmnopqrstuvwxyz' 
+.ascii_lowercase : 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'  
 '''
 
 # from string import *
