@@ -18,10 +18,9 @@ string module contains; all printable ASCII characters...
                                 (carriage return - couser comes to the begining of the line and overwrite)
 '''
 
-# from string import *
-
-# explanations
 
 import string
 
-#code
+print(string.printable)
+print('---')
+
