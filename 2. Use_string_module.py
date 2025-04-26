@@ -24,5 +24,5 @@ import string
 print(string.printable)
 print('---')
 
-print(string.digits)
+print((string.digits)+(string.digits))
 print('---')
