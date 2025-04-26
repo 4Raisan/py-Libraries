@@ -26,3 +26,5 @@ print('---')
 
 print((string.digits)+(string.digits))
 print('---')
+
+print('1 2\t3\n4\r5\x0b6\x0c7')
