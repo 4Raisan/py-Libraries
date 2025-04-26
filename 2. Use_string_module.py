@@ -14,7 +14,8 @@ string module contains; all printable ASCII characters...
 ---------------------------------------------------------
 .punctuation : '!"#$%&\'()*+,-./:;<=>?@[\\]^_{|}~'`  
 ---------------------------------------------------------
-.whitespace : ' \t\n\r\x0b\x0c'
+.whitespace : ' \t\n\r\x0b\x0c' (space, tab, newline, carriage return, vertical tab, form feed)  
+                                (carriage return - couser comes to the begining of the line and overwrite)
 '''
 
 # from string import *
