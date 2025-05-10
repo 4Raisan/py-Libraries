@@ -8,3 +8,7 @@ subprocess.run(["ping", "google.com"])
 import subprocess
 subprocess.run(["notepad"])
 
+# Run Terminals (CMD/PowerShell)
+import subprocess
+subprocess.run(["cmd", "/c", "dir /w"])  # CMD
+subprocess.run(["powershell", "ls"])  # PowerShell
