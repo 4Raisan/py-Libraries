@@ -5,7 +5,7 @@
 # Use raw strings (r"") for Windows paths
 
       shell=True      → only for Batch Script File Run or Command Run (for Raw - subprocess.run("echo %PATH%") )
-  capture_output=True  → capture the output of the teminal
+  capture_output=True  → capture the output of the teminal ( no echo 's are captured, only dir like once )
       text=True      → convert the above capture into Python String format
 
   stdout (Standard Output): Where a program sends its normal output (e.g., print statements).
@@ -25,15 +25,20 @@ subprocess.run(["explorer", r"C:\Windows"])  # Open File Explorer
 subprocess.run(["notepad"])  # open program
 
 
-# Run Terminals (CMD/PowerShell)
+#---. Terminals + Just Open BATs / Run .------------------------------------------------------
+
+# Running a .bat file (Windows) or .sh file (Linux/macOS).
+import subprocess
+subprocess.run("mybatchs.bat", shell=True)
+
+# Directly Run on Terminals (CMD/PowerShell) - No Outputs
 import subprocess
 subprocess.run(["cmd", "/c", "dir /w"])  # CMD  → ( /w - just names ) 
 subprocess.run(["powershell", "ls"])  # PowerShell
 
+#---. Terminals + Outputs .------------------------------------------------------------------
 
-# Direct Run on Terminals and Get their Output
-
-# 1. Simple command with output
+# 1. Terminal Runs with outputs
 # run in CMD shell / capture the output / convert output to python string
 import subprocess  
 result = subprocess.run(["dir"], shell=True, capture_output=True, text=True)
@@ -41,16 +46,15 @@ result = subprocess.run(["dir"], shell=True, capture_output=True, text=True)
 print(result.stdout)   # .stderr
 print(result)
 
-# 1.2. Same with   "cmd", "/c",   |accept shell=True
+# 2. Terminal Runs with outputs - with   "cmd", "/c",   |accept shell=True
 import subprocess  
 result1 = subprocess.run(["cmd", "/c", "dir"], capture_output=True, text=True)
-print(result1.stdout)
+print(result1.stdout)  # .stderr
+print(result1)
+
+#---. Terminals + Errors .-------------------------------------------------------------------
 
 
-# 2. 
 
-# 3. Running a .bat file (Windows) or .sh file (Linux/macOS).
-import subprocess
-subprocess.run("mybatchs.bat", shell=True)
  
 
