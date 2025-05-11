@@ -23,14 +23,17 @@ print(time.ctime())           # Current time
 import time
 print(time.time())  # Example output: 1715394410.502188
 
+
 # 2. time.sleep(seconds) -> Add delay to program
 import time
 time.sleep(3)
 print("Wait 3 seconds...")
 
+
 # 3. time.ctime() -> Current time on the Device (just-Display)
 import time
 print(time.ctime())  # Sun May 11 23:37:16 2025
+
 
 # 4. time.localtime(),tm_...  -> Current time on the Device (Calculations with variables)
 import time
@@ -46,11 +49,11 @@ tm_yday -> Day of the Year
 tm_isdst=0  -> Daylight Saving Time  # (mostly 0-No) or 1 (add 1-Hour)
 '''
 
-# 5. time.strftime(%format, time.localtime()) -> format device time Display
+
+# 5. time.strftime("%format") -> format device time (Display)
 import time
-formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-print("Formatted Time:", formatted_time)
-# Output: Formatted Time: 2025-05-11 23:55:29
+print(time.strftime("%Y-%m-%d, %I %p"))
+# Output: 2025-05-12, 12 AM
 '''
  %Y	 ->  Year
  %m	 ->  Month
@@ -62,3 +65,6 @@ print("Formatted Time:", formatted_time)
  %A	 ->  Weekday (Sunday)
  %p	 ->  AM / PM	
 '''
+
+
+
