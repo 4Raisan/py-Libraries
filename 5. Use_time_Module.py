@@ -1,38 +1,22 @@
 ''' .time() - handle the programs which need : time / delays / calculate times '''
 
-# Epoch  =>  January 1, 1970
-
-# 1. time.time() -> Time in seconds (float) from Epoch -- can be use to calculation EASY with float seconds
+# 1. time.sleep(seconds) -> Add delay to program
 import time
-print(time.time())  # Example output: 1715394410.502188
-
-# 2. time.sleep(seconds) -> Add delay to program
-import time
-time.sleep(3)
-print("Wait 3 seconds...")
-
-# 3. time.ctime() -> Current time on the Device
-import time
-print(time.ctime())           # Current time
-
-''' .time() - handle the programs which need : time / delays / calculate times '''
-
-# Epoch  =>  January 1, 1970
-
-# 1. time.time() -> Time in seconds (float) from Epoch -- can be use to calculation EASY with float seconds
-import time
-print(time.time())  # Example output: 1715394410.502188
-
-
-# 2. time.sleep(seconds) -> Add delay to program
-import time
-time.sleep(3)
+time.sleep(3)  #(3.5) = 3.5 sec 
 print("Wait 3 seconds...")
 
 
-# 3. time.ctime() -> Current time on the Device (just-Display)
+# 2. time.ctime() -> Current time on the Device (just-Display)
 import time
 print(time.ctime())  # Sun May 11 23:37:16 2025
+
+
+# 3. time.perf_counter() -> Stopwatch / (just-high-resolution-timer)
+import time
+start = time.perf_counter()
+time.sleep(1.8853)  # 1.8853 sec -> 1.89 sec
+end = time.perf_counter()
+print(f"{end - start:.2f} seconds gone")
 
 
 # 4. time.localtime(),tm_...  -> Current time on the Device (Calculations with variables)
@@ -66,5 +50,7 @@ print(time.strftime("%Y-%m-%d, %I %p"))
  %p	 ->  AM / PM	
 '''
 
-
+# 6. time.time() -> Time in seconds (float) from Epoch(January 1, 1970) - (timestamps and general date/time purposes)
+import time
+print(time.time())  # Example output: 1715394410.502188
 
