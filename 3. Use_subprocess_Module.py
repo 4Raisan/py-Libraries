@@ -12,19 +12,6 @@
   stderr (Standard Error): Where a program sends error messages (e.g., warnings, exceptions).
 '''
 
-# Open or Ping URLs
-import subprocess
-subprocess.run(["start", "https://google.com"], shell=True)  # Open URL
-subprocess.run(["ping", "google.com"])  # ping URL
-
-
-# Open Programs or Files (Softwares)
-import subprocess
-subprocess.run(["notepad", r"C:\User\Desktop\file.txt"])  # Open specific file
-subprocess.run(["explorer", r"C:\Windows"])  # Open File Explorer
-subprocess.run(["notepad"])  # open program
-
-
 #---. Terminals + Just Open BATs / Run .------------------------------------------------------
 
 # Running a .bat file (Windows) or .sh file (Linux/macOS).
@@ -36,7 +23,7 @@ import subprocess
 subprocess.run(["cmd", "/c", "dir /w"])  # CMD  → ( /w - just names ) 
 subprocess.run(["powershell", "ls"])  # PowerShell
 
-#---. Terminals + Outputs .------------------------------------------------------------------
+#---. Terminals with Outputs .------------------------------------------------------------------
 
 # 1. Terminal Runs with outputs
 # run in CMD shell / capture the output / convert output to python string
@@ -52,9 +39,29 @@ result1 = subprocess.run(["cmd", "/c", "dir"], capture_output=True, text=True)
 print(result1.stdout)  # .stderr
 print(result1)
 
-#---. Terminals + Errors .-------------------------------------------------------------------
+#---. try:except: - Timeouts + Errors .----------------------------------------------------------------
 
+# 3. Timeout Control -[  timeout=#  ]
+try:
+      subprocess.run(["dir"], shell=True, timeout=5)  # give time to commands
+except (subprocess.TimeoutExpired):
+      print("TimeOut")
+      
+# 4. Error checking -[  check=True  ]
+try:
+      subprocess.run(["dir", "fileX"], shell=True, check=True)  # check FileX's existing 
+except (subprocess.CalledProcessError):
+      print("Command failed")
 
+#---. File/Program Handling + URLs .-------------------------------------------------------------------
 
- 
+# Open Programs or Files (Softwares)
+import subprocess
+subprocess.run(["notepad", r"C:\User\Desktop\file.txt"])  # Open specific file
+subprocess.run(["explorer", r"C:\Windows"])  # Open File Explorer
+subprocess.run(["notepad"])  # open program
 
+# Open or Ping URLs
+import subprocess
+subprocess.run(["start", "https://google.com"], shell=True)  # Open URL
+subprocess.run(["ping", "google.com"])  # ping URL
