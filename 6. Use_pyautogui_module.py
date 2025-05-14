@@ -14,6 +14,11 @@ pyautogui.click()  # single click
 pyautogui.rightClick(x=400, y=600)  # right click
 pyautogui.middleClick()  # middle click
 
+# Scroll(amount)  amount > 0 for up/right  |  amount < 0 for down/left
+# vertically |
+pyautogui.scroll(200)    # Scroll up
+pyautogui.scroll(-200)   # Scroll down
+
 # Screenshot
 screenshot = pyautogui.screenshot()
 screenshot.save("screenshot.png") # default > "C:\Users\4Raisan\screenshot.png"
