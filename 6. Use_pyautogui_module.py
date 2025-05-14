@@ -18,6 +18,9 @@ pyautogui.middleClick()  # middle click
 # vertically |
 pyautogui.scroll(200)    # Scroll up
 pyautogui.scroll(-200)   # Scroll down
+# horizontally --
+pyautogui.hscroll(200)    # Scroll right
+pyautogui.hscroll(-200)   # Scroll left
 
 # Screenshot
 screenshot = pyautogui.screenshot()
