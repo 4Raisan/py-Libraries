@@ -7,7 +7,8 @@ pyautogui.write("Hello, world!", interval=0.1)   # interval, for each character
 # Move the mouse to coordinates (100, 100)
 pyautogui.moveTo(100, 100, duration=1)
 
-# Click the mouse
+# Click the mouse -> default click on the mouse location 
+# -> specified location:  pyautogui.click(x=100, y=350)
 pyautogui.click()  # single click
 pyautogui.rightClick()  # right click
 pyautogui.middleClick()  # middle click
