@@ -3,3 +3,6 @@ pip install pyautogui '''
 
 # Type text (Mouse cursor should be active on the Typable place)
 pyautogui.write("Hello, world!", interval=0.1)  
+
+# Move the mouse to coordinates (100, 100)
+pyautogui.moveTo(100, 100, duration=1)
