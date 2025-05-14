@@ -8,7 +8,9 @@ pyautogui.write("Hello, world!", interval=0.1)   # interval, for each character
 pyautogui.moveTo(100, 100, duration=1)
 
 # Click the mouse
-pyautogui.click()
+pyautogui.click()  # single click
+pyautogui.rightClick()  # right click
+pyautogui.middleClick()  # middle click
 
 # Screenshot
 screenshot = pyautogui.screenshot()
