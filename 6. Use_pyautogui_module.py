@@ -10,3 +10,6 @@ pyautogui.moveTo(100, 100, duration=1)
 # Click the mouse
 pyautogui.click()
 
+# Screenshot
+screenshot = pyautogui.screenshot()
+screenshot.save("screenshot.png") # default > "C:\Users\4Raisan\screenshot.png"
