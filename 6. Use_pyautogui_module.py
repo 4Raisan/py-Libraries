@@ -24,4 +24,4 @@ pyautogui.hscroll(-200)   # Scroll left
 
 # Screenshot
 screenshot = pyautogui.screenshot()
-screenshot.save("screenshot.png") # default > "C:\Users\4Raisan\screenshot.png"
+screenshot.save("screenshot.png") # default >  r"C:\Users\4Raisan\screenshot.png"
