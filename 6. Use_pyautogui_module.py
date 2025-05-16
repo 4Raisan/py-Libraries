@@ -25,7 +25,8 @@ pyautogui.write("Hello, world!", interval=0.1)   # interval, for each character
 # Press a key > pyautogui.press('')
 pyautogui.press('enter')
 
-
+# Press Hotkey > pyautogui.hotkey('' , '')
+pyautogui.hotkey('ctrl', 'v')
 
 #----- Mouse Control --------------------------------------------------------------
 
