@@ -9,7 +9,8 @@ pip install pyautogui '''
 # Type text (Mouse cursor should be active on the Typable place)
 pyautogui.write("Hello, world!", interval=0.1)   # interval, for each character 
 
-
+# Press a key > pyautogui.press('')
+pyautogui.press('enter')
 
 #----- Mouse Control --------------------------------------------------------------
 
