@@ -28,6 +28,11 @@ pyautogui.press('enter')
 # Press Hotkey > pyautogui.hotkey('' , '')
 pyautogui.hotkey('ctrl', 'v')
 
+# Key down/up > pyautogui.keyDown('') / pyautogui.keyUp('')
+pyautogui.keyDown('shift')  # Hold down shift
+pyautogui.press('a')  # Press 'a' (will type capital A)
+pyautogui.keyUp('shift')  # Release shift
+
 #----- Mouse Control --------------------------------------------------------------
 
 # Move the mouse to coordinates (100, 100)
